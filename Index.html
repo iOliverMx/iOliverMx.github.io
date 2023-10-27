@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step up Sneakers</title>
+    <link rel="stylesheet" href="Style Inicio.css">
+</head>
+
+<body>
+
+    <section class="form container">
+        <h1>Step up Sneakers</h1>
+        <h3>Iniciar Sesión</h3> <br>
+        <form id="loginForm" onsubmit="return validateForm()" action="#">
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario" maxlength="25"
+                required><br>
+            <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña"
+                maxlength="5" required><br>
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+    </section>
+
+    <footer class="footer container">
+        <div class="links">
+            <h4>Redes Sociales</h4>
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100075945470490">
+                    <div class="social">
+                        <img src="images/s1.svg" alt="">
+                    </div>
+                </a>
+                <a href="https://www.tiktok.com/@gallerycdmx?lang=es">
+                    <div class="social">
+                        <img src="images/s2.svg" alt="">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/gallerycdmx/">
+                    <div class="social">
+                        <img src="images/s3.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function validateForm() {
+            const usuario = document.getElementById("usuario").value;
+            const contrasena = document.getElementById("contrasena").value;
+
+            // Verificar caracteres especiales (solo letras y números)
+            const specialCharacters = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+            if (specialCharacters.test(usuario) || specialCharacters.test(contrasena)) {
+                alert("El usuario y la contraseña no deben contener caracteres especiales.");
+                return false;
+            }
+
+            // Verificar credenciales (usuario: admin, contraseña: 12345)
+            if (usuario === "admin" && contrasena === "12345") {
+                window.location.href = "Index Principal.html"; // Redirigir a la página autenticada
+                return false;
+            }
+
+            // Si no se cumplen las condiciones, el formulario se envía normalmente
+            return true;
+        }
+    </script>
+</body>
+
+</html>
