@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css Formulario.css">
+    <link rel="shorcut icon" href="../img/logo/logo simple sin fondo.png">
+    <title>Contacto</title>
+    <script>
+
+        function actualizarFecha() {
+            // Obtiene la fecha y hora actual
+            var now = new Date();
+            // Obtiene la hora actual en formato de cadena de texto
+            // El argumento 'es-ES' especifica el idioma y la configuración regional (Español de España)
+            // El objeto de opciones { hour12: false } se utiliza para mostrar la hora en formato de 24 horas
+            var time = now.toLocaleTimeString('es-ES', { hour12: false });
+            // Obtiene la fecha actual en formato de cadena de texto
+            // El argumento 'es-ES' especifica el idioma y la configuración regional (Español de España)
+            // El objeto de opciones { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+            // se utiliza para mostrar el día de la semana, el año, el mes y el día en un formato largo
+            var date = now.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+            // Obtiene el elemento del documento con el id 'clock'
+            var clockContainer = document.getElementById('clock');
+            // Actualiza el contenido del elemento con la hora y fecha actual
+            clockContainer.innerHTML = time + ' | ' + date;
+        }
+
+        //Mediante la funcion setInterval manda a llamar a la funcion cada cierto tiempo
+        setInterval(actualizarFecha, 1000);
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="clock"></div>
+
+        <div class="menu container">
+
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../Img/barras menu.png" class="menu-icono" alt="">
+            </label>
+
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="../Index Principal.html">Inicio</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Hombres</a></li>
+                        <li><a href="#">Mujeres</a></li>
+                    </ul>
+                </div>
+
+                <img class="logo-2" src="../Img/logos/logo 1/logo p2.png" alt="">
+
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#ancla-horario">Horario</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/profile.php?id=100075945470490">
+                            <div class="social">
+                                <img src="../images/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="https://www.tiktok.com/@gallerycdmx?lang=es">
+                            <div class="social">
+                                <img src="../images/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/gallerycdmx/">
+                            <div class="social">
+                                <img src="../images/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="cuerpo-formulario">
+        <form action="https://formsubmit.co/robles.oliver.cb37@gmail.com" method="POST">
+            <div class="form">
+                <img src="https://th.bing.com/th/id/R.adb14c37a0139c15a398f4e7c794fc4a?rik=1MM%2bKMbN0SfNQw&pid=ImgRaw&r=0" alt="">
+                <div class="grupo">
+                    <input type="text" id="nombre" required><span class="barra"></span>
+                    <label for="">Nombre</label><br>
+                </div>
+                <div class="grupo">
+                    <input type="email" id="email" required><span class="barra"></span>
+                    <label for="">Email</label><br>
+                </div>
+                <div class="grupo">
+                    <Textarea cols="30" rows="7" id="comentario" required></Textarea><span class="barra"></span>
+                    <label for="">Comentario</label>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+</body>
+
+</html>

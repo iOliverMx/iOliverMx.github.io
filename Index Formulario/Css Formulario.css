@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#clock {
+    position: fixed;
+    top: 58px;
+    right: 1;
+    padding: 10px;
+    background-color: #00000081;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 250px;
+}
+
+.menu-2 {
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1{
+    height: 60px;
+}
+
+.logo-2 {
+    position: absolute;
+    margin-left: 40%;
+    width: 210px;
+    height: 85px;
+}
+
+.logo-3 {
+    width: 400px;
+}
+
+.socials{
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.social img {
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+
+
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.cuerpo-formulario {
+    margin-top: 180px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --colortextos: #000;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+form {
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.form {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+.form img {
+    border-radius: 25px;
+    width: 500px;
+    height: 220px;
+}
+
+input,
+textarea {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colortextos);
+}
+
+textarea {
+    resize: none;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: none;
+    color: #5e5d5d;
+}
+
+.cuerpo-formulario label {
+    color: var(--colortextos);
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -14px;
+    color: #d2c2b0;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+input:focus~.barra::before,
+textarea:focus~.barra::before {
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background-color: #d2c2b0;
+    transition: 0.3s ease width;
+}
+
+button {
+    background-color: #d2c2b0;
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #000000;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #d2c2b0;
+    transform: translateY(4px);
+}
+
+
+
+@media(max-width:991px) {
+
+    #clock {
+        text-align: center;
+        top: 6%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000000e0;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #C5C5C5;
+        text-align: center;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+
+}
