@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu-1 {
+    margin-right: 250px;
+}
+
+.menu-2 {
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1 {
+    height: 60px;
+}
+
+.logo-2 {
+    position: absolute;
+    margin-left: 40%;
+    width: 210px;
+    height: 85px;
+}
+
+.logo-3 {
+    width: 400px;
+}
+
+.socials {
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.social img {
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+.shop {
+    padding: 200px 0px 80px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.shop-img {
+    width: 50%;
+    flex-basis: 70%;
+    margin-right: 100px;
+}
+
+.shop-img img {
+    width: 650px;
+    height: 400px;
+    margin-left: 150px;
+}
+
+.shop-txt {
+    text-align: left;
+    width: 50%;
+}
+
+.shop-txt h2 {
+    font-size: 40px;
+    color: #000000;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.shop-txt h3 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.shop-txt h4 {
+    color: #00000086;
+    margin-bottom: 80px;
+}
+
+.shop-txt p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 50px;
+    margin-right: 40px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 15px 50px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.btn-2:hover {
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footer {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between
+}
+
+.links h4 {
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.links ul li a {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.cantidad {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.cantidad select {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+#converse-img img {
+    width: 600px;
+    height: 600px;
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.btn-3:hover {
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+}
