@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 250px;
+}
+
+.menu-2 {
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1{
+    height: 60px;
+}
+
+.logo-2 {
+    position: absolute;
+    margin-left: 40%;
+    width: 210px;
+    height: 85px;
+}
+
+.logo-3 {
+    width: 400px;
+}
+
+.socials{
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.social img {
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+.info {
+    padding: 175px 50px 0px 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.info-gen {
+    padding: 50px 50px 0px 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.info-img {
+    width: 100%;
+}
+
+.info-img img {
+    width: 450px;
+    height: 600px;
+    margin-left: 150px;
+}
+
+.cropped {
+    overflow: hidden;
+}
+
+.cropped img {
+    margin: -300px 0px -50px 0px;
+}
+
+.info-txt {
+    width: 100%;
+}
+
+.info-txt h2 {
+    font-size: 45px;
+    color: #000000;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.info-txt p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 25px;
+    margin-right: 40px;
+}
+
+.botones {
+    margin-top: 0px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #000000;
+    color: #000000;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.btn-1:hover {
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #fff;
+}
